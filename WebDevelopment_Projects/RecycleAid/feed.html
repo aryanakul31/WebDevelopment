@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>RECYCLE</title>
+	<link rel="stylesheet" href="style1.css">
+	<script type="text/javascript">
+	function validateForm()
+		{ 
+			var fname= document.forms["myForm"]["fname"].value;
+			var lname= document.forms["myForm"]["lname"].value;
+			var x = document.myForm.email.value;
+			atpos = x.indexOf("@");
+			dotpos = x.lastIndexOf(".");
+		
+				if(fname=="")
+			{	alert("Enter your first name");
+				return false;
+			}
+				else if(lname=="")
+			{	alert("Enter your last name");
+				return false;
+			}
+			else if (atpos < 1 || (dotpos - atpos < 2 )) {
+        			alert("Invalid email");
+				document.myform.email.focus();
+        			return false;
+    			}
+			else
+			{
+				alert("Thank you for filling the form");
+				return true;
+			}
+				
+				
+				
+	}
+</script>	
+</head>
+<body>
+	
+	<header>	<table border="0" align="center">
+			<tr>
+			
+			<td><img class="h" src="3r.gif" height="120" width="120"></td>
+			<td><h1>RECYCLE<em class="t">AID</em></h1>
+			
+			
+			<br><h2>TOGETHER WE CAN MAKE A DIFFERENCE</h2></td>
+			</tr>
+			</table>
+	</header><br><br><br><br>
+			<div id="menu">
+				<ul  style="padding-left:5">
+					<li><a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="waste.html">Waste</a>
+						<ul>
+							<li><a href="electronic.html">Electronic</a>
+							<li><a href="food.html">Food</a>
+							<li><a href="paper.html">Paper</a>
+							<li><a href="plastic.html">Plastic</a>
+							<li><a href="cloth.html">Cloth</a>
+							<li><a href="medi.html">Medicine</a>
+							<li><a href="organic.html">Organic</a>
+							<li><a href="construction.html">Construction</a>
+						</ul>
+					<li><a href="people.html">People Can Do!!</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="test.html">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="feed.html">Feedback Form</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				
+							
+				</ul>
+			</div><br><br><br><br>
+			<div>
+			<h1 class="h2">Can We Help? </h1>
+			<p class="p2">
+		If you have any questions or queries regarding this website then please use the form below. We love to hear from our users and are always open to listening to your feedback too.
+<br><br>
+Love the site, hate the site or even if you have any suggestions that may improve it then get typing in our form below.
+<br><br>
+Do you have a story to tell on recycling or environmental issues? That’s great, use this form to get in touch with a brief description of the blog you wish to submit and we will get right back to you.
+<br><br>
+If your enquiry is in regards to submitting a company or charity to our directory you can use the form on Submit Your Site page.
+<br><br>
+We do our best to respond to every email as soon as possible usually within 24 hours (not including weekends and public holidays)</p>
+			<center>
+<form name="myForm" action="sendata.php" method="POST" onsubmit="return validateForm();" >
+	
+First Name(Required): <input type="text" name="fname" placeholder="Your name"><br><br>
+Last Name(Required): <input type="text" name="lname" placeholder="Your last name.."><br><br>
+
+E-Mail(Required): <input type="text" name="email" placeholder="eg.abc@gmail.com.."><br><br>
+
+Your Query/Suggestion(Required):<br> <center><textarea name="subject" placeholder="Write something.." style="height:200px"></textarea> </center>
+
+<br><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+<p style="font-size: 20" class="p1" align="center">Contact Us</p>
+<p style="font-size: 20" class="p2" align="center"><b>Contact Number</b>+91-887220323; +91-7837625713<br>
+	<b>E-mail:-</b> aryanakul31@gmail.com, k6651794@gmail.com</p>
+</body>
+</html>

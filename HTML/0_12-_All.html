@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Page Title</title>
+	</head>
+	
+	<body>
+		<!-- Tables -->
+		<h1>Table 1</h1>
+		<table>
+			<tr>
+				<th>Column Name 1</th>
+				<th>Column Name 2</th>				
+			</tr>
+			<tr>
+				<td>COntent 1</td>
+				<td>COntent 2</td>
+			</tr>
+		</table>
+		<hr>
+
+		<h1>Table 2</h1>
+		<table>
+			<caption>Table Caption</caption>
+			<!-- Table Headings -->
+			<thead>
+				<tr>
+					<td>Column Name 1</td>
+					<td>Column Name 2</td>
+				</tr>
+			</thead>
+			<!-- Table Footer -->
+			<tfoot>
+				<tr>
+					<TD>Footer</TD>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Content 1</td>
+					<td>COntent 2</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+
+		<h1>Table Styling</h1>
+		<table border="1" cellspacing="5px" cellpadding="5px" width="50%" >
+			<tr>
+				<th>Column Name 1</th>
+				<th>Column Name 2</th>				
+			</tr>
+			<tr>
+				<td>COntent 1</td>
+				<td>COntent 2</td>
+			</tr>
+			<tr>
+				<td colspan="2">COntent 3</td>
+			</tr>
+			<tr>
+				<td rowspan="2">COntent 4 & 6</td>
+				<td>COntent 5</td>
+			</tr>
+			<tr>
+				<td>COntent 7</td>
+			</tr>
+		</table>
+
+
+		<!--  Embed Binary Files -->
+		<img src="13_photo.jpg" width="500px" align="center" alt="Error" />
+		<br><br>
+		<video width="320" controls >
+			<source src="13_video.mp4" type="video/mp4">
+				Chutiyain
+		</video>
+		<br><br>
+		<audio controls>
+			<source src="13_song.mp3" type="audio/mp3">
+				Error
+		</audio>
+
+
+		<!-- Forms -->
+		<!-- Adds data in url -->
+		<h1>GET FORM</h1>
+		<form method="get" action="0_1-11_All.html">
+			<label for="FirstName">First Name:</label>
+			<input type="text" id="FirstName" placeholder="Enter your First Name" name="FirstName">
+			<br>
+			<label for="LastName">Last Name:</label>
+			<input type="text" id="LastName" placeholder="Enter your Last Name" name="LastName">
+			<br>
+			<input type="submit">
+			<input type="reset" value="Clear Form">	
+		</form>
+
+		<!-- Doesnt add data in URl -->
+		<h1>POST FORM</h1>
+		<form method="post" action="0_1-11_All.html">
+			<label for="FirstName">First Name:</label>
+			<input type="text" id="FirstName" placeholder="Enter your First Name" name="FirstName">
+			<br>
+			<label for="LastName">Last Name:</label>
+			<input type="text" id="LastName" placeholder="Enter your Last Name" name="LastName">
+			<br>
+			<input type="submit">
+			<input type="reset" value="Clear Form">	
+		</form>
+
+		<h1>Grouping FORM</h1>
+		<form method="get" action="0_1-11_All.html">
+			
+			<fieldset>
+				<legend>Input Box</legend>
+				<label for="FirstName">First Name:</label>
+				<input type="text" id="FirstName" placeholder="Enter your First Name" name="FirstName">
+				<br>
+				<label for="LastName">Last Name:</label>
+				<input type="text" id="LastName" placeholder="Enter your Last Name" name="LastName">
+				<br>
+				<input type="submit">
+				<input type="reset" value="Clear Form">	
+			</fieldset>
+			
+			<fieldset>
+				<legend>Input Box</legend>
+				<label for="FirstName">First Name:</label>
+				<input type="text" id="FirstName" placeholder="Enter your First Name" name="FirstName">
+				<br>
+				<label for="LastName">Last Name:</label>
+				<input type="text" id="LastName" placeholder="Enter your Last Name" name="LastName">
+				<br>
+				<input type="submit">
+				<input type="reset" value="Clear Form">	
+			</fieldset>
+		</form>
+
+
+		
+	</body>
+
+</html>

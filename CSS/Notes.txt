@@ -1,0 +1,10 @@
+Text attributes:
+	font_family
+	font_size
+	font_style (Normal, Italics, Oblique)
+	font_weight (Stroke thickness)
+	text_transform (Uppercase or lowercase)
+	text_decoration (Underline or over-line)
+	text_shadow (Shadow at back of the text)
+
+CSS Precedence Rules:

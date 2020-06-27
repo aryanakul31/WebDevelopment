@@ -1,0 +1,29 @@
+Valid Identifiers:
+	strFirst
+	$var
+	crashReport
+Invalid:
+	false
+	long
+	package
+	1Phone
+
+Primitive data types:
+	String
+	Number
+	Decimal
+	Boolean
+
+Syntax:
+	var a=1
+	var b="A"
+	var c=true;
+
+Input:
+	var a= prompt("enter first value")
+
+Escape Character:
+	\
+
+Array:
+	var colorArray=['white','black'];

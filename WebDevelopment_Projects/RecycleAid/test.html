@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<header>
+			<table border="0" align="center">
+			<tr>
+			&nbsp;&nbsp;
+			<td><img class="h" src="3r.gif" height="120" width="120"></td>
+			<td><h1>RECYCLE<em class="t">AID</em></h1>
+			<br><h2>TOGETHER WE CAN MAKE A DIFFERENCE</h2></td>
+			</tr>
+			</table>
+	</header><br><br><br><br>
+			
+			<div id="menu">
+				<ul  style="padding-left:5">
+					<li><a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="waste.html">Waste</a>
+						<ul>
+							<li><a href="electronic.html">Electronic</a>
+							<li><a href="food.html">Food</a>
+							<li><a href="paper.html">Paper</a>
+							<li><a href="plastic.html">Plastic</a>
+							<li><a href="cloth.html">Cloth</a>
+							<li><a href="medi.html">Medicine</a>
+							<li><a href="organic.html">Organic</a>
+							<li><a href="construction.html">Construction</a>
+						</ul>
+					<li><a href="people.html">People Can Do!!</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="test.html">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="feed.html">Feedback Form</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				
+							
+				</ul>
+			</div>
+<br><br><br>
+	
+<center>
+	<br><br><br><br>
+<div class="w3-content w3-section">
+	<img class="mySlides" src="c4.jpg" height="500" width="700">
+	<img class="mySlides" src="c6.jpg" height="500" width="700">
+	<img class="mySlides" src="c7.jpg" height="500" width="700">
+	<img class="mySlides" src="e4.jpg" height="500" width="700">
+	<img class="mySlides" src="e5.jpg" height="500" width="700">
+	<img class="mySlides" src="f1.jpg" height="500" width="700">
+	<img class="mySlides" src="f5.jpg" height="500" width="700">
+	<img class="mySlides" src="f7.jpg" height="500" width="700">
+	<img class="mySlides" src="p1.jpg" height="500" width="700">
+	<img class="mySlides" src="p3.jpg" height="500" width="700">
+	<img class="mySlides" src="p5.jpg" height="500" width="700">
+	<img class="mySlides" src="pl2.jpg" height="500" width="700">
+	<img class="mySlides" src="pl3.jpg" height="500" width="700">
+	<img class="mySlides" src="pl5.jpg" height="500" width="700">
+</div>
+<br>
+<br>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>

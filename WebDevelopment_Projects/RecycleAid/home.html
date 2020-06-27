@@ -1,0 +1,91 @@
+<html>
+<head >
+	<title>RECYCLE</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.thr {
+			height:50;
+			width: 100;
+			}
+	</style>
+
+	
+
+	<script>
+		var arr=["pictures/c.jpg","pictures/cans.jpg","pictures/e.jpg","pictures/f.jpg","pictures/p.jpg","pictures/pa.jpg","pictures/5.jpg"];
+		var i=0;
+		function next()
+			{ 
+				if(i==6)
+				i=0;
+				else
+				i=i+1;
+				document.getElementById("kk").src=arr[i];
+			}
+		function previous()
+			{
+				if(i==0)
+				i=6;
+				else
+				i=i-1;
+				document.getElementById("kk").src=arr[i];
+			} 
+ 
+		</script>
+		
+</head>
+<body>
+	
+	<header>
+			<table border="0" align="center">
+			<tr>
+			&nbsp;&nbsp;
+			<td><img class="h" src="3r.gif" height="120" width="120"></td>
+			<td><h1>RECYCLE<em class="t">AID</em></h1>
+			<br><h2>TOGETHER WE CAN MAKE A DIFFERENCE</h2></td>
+			</tr>
+			</table>
+	</header><br><br><br><br>
+			
+			<div id="menu">
+				<ul  style="padding-left:5">
+					<li><a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="waste.html">Waste</a>
+						<ul>
+							<li><a href="electronic.html">Electronic</a>
+							<li><a href="food.html">Food</a>
+							<li><a href="paper.html">Paper</a>
+							<li><a href="plastic.html">Plastic</a>
+							<li><a href="cloth.html">Cloth</a>
+							<li><a href="medi.html">Medicine</a>
+							<li><a href="organic.html">Organic</a>
+							<li><a href="construction.html">Construction</a>
+						</ul>
+					<li><a href="people.html">People Can Do!!</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="test.html">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="feed.html">Feedback Form</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				
+							
+				</ul>
+			</div>
+			
+			<br><br><br>
+			
+	
+	<center>
+	<table border="0" align="center">
+	<tr>
+	<td><input type="button" value="<" onClick="previous();"></td>&nbsp;&nbsp;	
+	<td><img  id="kk" src="pictures/5.jpg" height="400" width="600"></td>&nbsp;&nbsp;
+	<td><input type="button" value=">" onClick="next();"><td>
+	</tr>
+	</table>
+	</center>
+	<h2 class="h2">WELCOME TO RECYCLEAID</h2>
+	<img src="h.jpg" title="RECYCLE" border="1" height="400" width="500" align="right" hspace="50" vspace="10">
+	<p class="p">Recycling is the process of converting waste materials into new materials and objects. It is an alternative to "conventional" waste disposal that can save material and help lower greenhouse gas emissions (compared to plastic production, for example). Recycling can prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials, thereby reducing: energy usage, air pollution, and water pollution.
+		Recyclable materials include many kinds of glass, paper, and cardboard, metal, plastic, tires, textiles, and electronics. The composting or other reuse of biodegradable waste—such as food or garden waste—is also considered recycling. Materials to be recycled are either brought to a collection center or picked up from the curbside, then sorted, cleaned, and reprocessed into new materials destined for manufacturing </p>
+	
+</body>
+</html>
